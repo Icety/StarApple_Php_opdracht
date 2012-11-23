@@ -1,0 +1,11 @@
+{% extends 'layout.htm' %}
+
+{% block content %}
+    <h1>Add a new post</h1>
+    <form onSubmit="savePost(); return false;">
+        {{ form_widget(form) }}
+        
+        <button id="button">Add post</button>
+    </form>
+
+{% endblock %}

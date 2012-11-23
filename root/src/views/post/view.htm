@@ -1,0 +1,7 @@
+{% extends 'layout.htm' %}
+
+{% block content %}
+    <br /><br /><a href="/post/edit/{{ post.PostID }}">edit</a>
+    <h1>{{ post.title }}</h1>
+    <div>{{ post.message }}</div>
+{% endblock %}

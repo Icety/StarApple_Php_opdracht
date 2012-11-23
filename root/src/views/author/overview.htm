@@ -1,0 +1,20 @@
+{% extends 'layout.htm' %}
+
+{% block content %}
+    <h1> All Authors - Page {{ page }}</h1>
+    <ul>
+        {% for author in authors %}
+            <li><a href="/author/{{author.AuthorID}}">{{ author.firstname }} {{author.lastname}}</li>
+        {% endfor %}
+    </ul>
+    {% for i in range(1, pageCount) %}
+        <a href="/author/overview/{{ i }}">
+        {% if i == page %}
+            <b>{{ i }}</b>
+        {% else %}
+            {{ i }}
+        {% endif %}
+        </a>
+        &nbsp;
+    {% endfor %}
+{% endblock %}

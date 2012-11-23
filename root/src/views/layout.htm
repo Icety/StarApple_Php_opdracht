@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <title>StarApple Forum Assignment</title> 
+    <script src="{{__DIR__}}/../src/js/jquery.js"></script>
+    <script src="{{__DIR__}}/../src/js/posts.js"></script>
+    <script src="{{__DIR__}}/../src/js/authors.js"></script>
+    {% endblock %}
+  </head>
+  <body>
+    {% block links %}
+    <a href="{{__DIR__}}/post/new">New Post</a> -
+    <a href="{{__DIR__}}/post/overview/1">All Posts</a> -
+    <a href="{{__DIR__}}/author/overview">Author overview</a> -
+    <a href="{{__DIR__}}/author/new">Register</a> -
+    <a href="{{__DIR__}}/author/login">Login</a> 
+    {% endblock %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

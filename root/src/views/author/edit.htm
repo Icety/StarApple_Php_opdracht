@@ -1,0 +1,11 @@
+{% extends 'layout.htm' %}
+
+{% block content %}
+    <h1>Edit your information:</h1>
+    <form onSubmit="author_savePost(); return false;">
+        {{ form_widget(form) }}    
+        
+        <button id="button">Save</button>
+    </form>
+
+{% endblock %}
